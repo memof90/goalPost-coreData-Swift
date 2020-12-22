@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		8D9CBA422592632A00405363 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9CBA412592632A00405363 /* AppDelegate.swift */; };
 		8D9CBA442592632A00405363 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9CBA432592632A00405363 /* SceneDelegate.swift */; };
-		8D9CBA462592632A00405363 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9CBA452592632A00405363 /* ViewController.swift */; };
+		8D9CBA462592632A00405363 /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9CBA452592632A00405363 /* GoalsVC.swift */; };
 		8D9CBA492592632A00405363 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D9CBA472592632A00405363 /* Main.storyboard */; };
 		8D9CBA4C2592632A00405363 /* goalpost_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D9CBA4A2592632A00405363 /* goalpost_app.xcdatamodeld */; };
 		8D9CBA4E2592632D00405363 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D9CBA4D2592632D00405363 /* Assets.xcassets */; };
@@ -20,7 +20,7 @@
 		8D9CBA3E2592632A00405363 /* goalpost-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "goalpost-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D9CBA412592632A00405363 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D9CBA432592632A00405363 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8D9CBA452592632A00405363 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8D9CBA452592632A00405363 /* GoalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsVC.swift; sourceTree = "<group>"; };
 		8D9CBA482592632A00405363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D9CBA4B2592632A00405363 /* goalpost_app.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = goalpost_app.xcdatamodel; sourceTree = "<group>"; };
 		8D9CBA4D2592632D00405363 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,9 +58,12 @@
 		8D9CBA402592632A00405363 /* goalpost-app */ = {
 			isa = PBXGroup;
 			children = (
+				8D9CBA5C259263EB00405363 /* Extensions */,
+				8D9CBA5B259263DA00405363 /* Enums */,
+				8D9CBA5A259263B600405363 /* View */,
+				8D9CBA592592639100405363 /* Controller */,
 				8D9CBA412592632A00405363 /* AppDelegate.swift */,
 				8D9CBA432592632A00405363 /* SceneDelegate.swift */,
-				8D9CBA452592632A00405363 /* ViewController.swift */,
 				8D9CBA472592632A00405363 /* Main.storyboard */,
 				8D9CBA4D2592632D00405363 /* Assets.xcassets */,
 				8D9CBA4F2592632D00405363 /* LaunchScreen.storyboard */,
@@ -68,6 +71,35 @@
 				8D9CBA4A2592632A00405363 /* goalpost_app.xcdatamodeld */,
 			);
 			path = "goalpost-app";
+			sourceTree = "<group>";
+		};
+		8D9CBA592592639100405363 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8D9CBA452592632A00405363 /* GoalsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8D9CBA5A259263B600405363 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8D9CBA5B259263DA00405363 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		8D9CBA5C259263EB00405363 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D9CBA462592632A00405363 /* ViewController.swift in Sources */,
+				8D9CBA462592632A00405363 /* GoalsVC.swift in Sources */,
 				8D9CBA422592632A00405363 /* AppDelegate.swift in Sources */,
 				8D9CBA4C2592632A00405363 /* goalpost_app.xcdatamodeld in Sources */,
 				8D9CBA442592632A00405363 /* SceneDelegate.swift in Sources */,
