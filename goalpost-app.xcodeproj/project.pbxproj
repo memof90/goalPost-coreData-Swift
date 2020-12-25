@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8D27619A25943FCC00164056 /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D27619925943FCC00164056 /* GoalType.swift */; };
 		8D4873D425944AC400792A24 /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4873D325944AC400792A24 /* CreateGoalVC.swift */; };
+		8D4CBA6C25969217007FC035 /* FinishGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CBA6B25969217007FC035 /* FinishGoalVC.swift */; };
 		8D5C2CFB25966404003C7E50 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5C2CFA25966404003C7E50 /* UIViewExt.swift */; };
 		8D5C2CFE25966BBB003C7E50 /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5C2CFD25966BBB003C7E50 /* UIButtonExt.swift */; };
 		8D8B268425965A5900058CCB /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8B268325965A5900058CCB /* UIViewControllerExt.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		8D27619925943FCC00164056 /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
 		8D4873D325944AC400792A24 /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
+		8D4CBA6B25969217007FC035 /* FinishGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishGoalVC.swift; sourceTree = "<group>"; };
 		8D5C2CFA25966404003C7E50 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		8D5C2CFD25966BBB003C7E50 /* UIButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
 		8D8B268325965A5900058CCB /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			children = (
 				8D9CBA452592632A00405363 /* GoalsVC.swift */,
 				8D4873D325944AC400792A24 /* CreateGoalVC.swift */,
+				8D4CBA6B25969217007FC035 /* FinishGoalVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				8D9CBA462592632A00405363 /* GoalsVC.swift in Sources */,
 				8D9CBA422592632A00405363 /* AppDelegate.swift in Sources */,
 				8D8B268425965A5900058CCB /* UIViewControllerExt.swift in Sources */,
+				8D4CBA6C25969217007FC035 /* FinishGoalVC.swift in Sources */,
 				8D27619A25943FCC00164056 /* GoalType.swift in Sources */,
 				8D9CBA4C2592632A00405363 /* goalpost_app.xcdatamodeld in Sources */,
 				8D4873D425944AC400792A24 /* CreateGoalVC.swift in Sources */,

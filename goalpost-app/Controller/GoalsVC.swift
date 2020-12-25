@@ -8,6 +8,9 @@
 import UIKit
 import CoreData
 
+// access to delegate into all controller
+let appDelegate = UIApplication.shared.delegate as? AppDelegate
+
 class GoalsVC: UIViewController {
     
 //    MARK: IBOutlet
