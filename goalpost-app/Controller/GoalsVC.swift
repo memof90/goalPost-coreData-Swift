@@ -37,6 +37,15 @@ class GoalsVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        fetchCoreDataObjects()
+        tableView.reloadData()
+          
+               
+    }
+    
+//    MARK: Function
+//    funtion to reload table View
+    func fetchCoreDataObjects(){
         self.fetch { (complete) in
             if complete {
                 if goals.count >= 1 {
@@ -47,10 +56,6 @@ class GoalsVC: UIViewController {
                 }
             }
         }
-
-        tableView.reloadData()
-          
-               
     }
 
     //    MARK: IBAction
@@ -84,11 +89,49 @@ extension GoalsVC : UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
     
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .none
+    }
+    
+//    mehtod depreciated
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let deleteAction = UITableViewRowAction(style: .destructive, title: "DELETE") { (rowAction, indexPath) in
+            self.removeGoal(atIndexPath: indexPath)
+            self.fetchCoreDataObjects()
+            
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+        deleteAction.backgroundColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
+        
+        return [deleteAction]
+    }
+//    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+//        let deleteAction = UIContextualAction(style: .destructive, title: "DELETE") { (<#UIContextualAction#>, <#UIView#>, <#@escaping (Bool) -> Void#>) in
+//            <#code#>
+//        }
+//    }
     
 }
 
 extension GoalsVC {
+//    remove item of table
+    func removeGoal(atIndexPath indexPath: IndexPath) {
+        guard let managedContext = appDelegate?.persistentContainer.viewContext else {
+            return
+        }
+        managedContext.delete(goals[indexPath.row])
+        
+        do {
+            try managedContext.save()
+            print("Sucessfully remove goal!")
+        } catch {
+            debugPrint("Could not remove: \(error.localizedDescription)")
+        }
+    }
     func fetch(completion: (_ complete: Bool) -> ()){
 //        obtain data to  manage object
         guard let managedContext = appDelegate?.persistentContainer.viewContext else {
