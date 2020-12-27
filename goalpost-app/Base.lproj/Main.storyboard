@@ -139,18 +139,39 @@
                                                         </stackView>
                                                     </subviews>
                                                 </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FbG-jT-6wL">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOAL COMPLETE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8V3-ao-VuB">
+                                                            <rect key="frame" x="76" y="14.5" width="262.5" height="41"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="30"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.91764705882352937" green="0.66274509803921566" blue="0.26666666666666666" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="8V3-ao-VuB" firstAttribute="centerX" secondItem="FbG-jT-6wL" secondAttribute="centerX" id="SmM-D8-Y1I"/>
+                                                        <constraint firstItem="8V3-ao-VuB" firstAttribute="centerY" secondItem="FbG-jT-6wL" secondAttribute="centerY" id="Ykn-3k-2HB"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="FbG-jT-6wL" firstAttribute="leading" secondItem="JBY-WG-Sry" secondAttribute="leading" id="2Oj-h2-gF4"/>
                                                 <constraint firstItem="ta2-yL-Gvb" firstAttribute="leading" secondItem="JBY-WG-Sry" secondAttribute="leadingMargin" constant="10" id="7j2-uH-Xfx"/>
                                                 <constraint firstAttribute="trailing" secondItem="iww-ow-KiS" secondAttribute="trailing" constant="8" id="9yd-i6-oDJ"/>
                                                 <constraint firstItem="ta2-yL-Gvb" firstAttribute="top" secondItem="JBY-WG-Sry" secondAttribute="topMargin" id="CBc-b3-SWR"/>
                                                 <constraint firstItem="iww-ow-KiS" firstAttribute="top" secondItem="JBY-WG-Sry" secondAttribute="top" constant="8" id="Dn2-yT-SSV"/>
                                                 <constraint firstAttribute="bottom" secondItem="iww-ow-KiS" secondAttribute="bottom" constant="8" id="EvO-dX-w7R"/>
+                                                <constraint firstAttribute="bottom" secondItem="FbG-jT-6wL" secondAttribute="bottom" id="L2P-tG-fkx"/>
+                                                <constraint firstItem="FbG-jT-6wL" firstAttribute="top" secondItem="JBY-WG-Sry" secondAttribute="top" id="LR0-eV-up5"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="ta2-yL-Gvb" secondAttribute="bottom" id="giA-lz-0aX"/>
                                                 <constraint firstItem="iww-ow-KiS" firstAttribute="leading" secondItem="ta2-yL-Gvb" secondAttribute="trailing" constant="10" id="pLS-WD-9R6"/>
+                                                <constraint firstAttribute="trailing" secondItem="FbG-jT-6wL" secondAttribute="trailing" id="t6Y-qo-sQX"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="completionView" destination="FbG-jT-6wL" id="qbp-X0-y4n"/>
                                             <outlet property="goProgressLbl" destination="iww-ow-KiS" id="QG4-ZT-5DV"/>
                                             <outlet property="goalDescriptionLbl" destination="SW5-Th-pEL" id="RxL-on-Wao"/>
                                             <outlet property="goalTypeLbl" destination="IUn-Qn-u98" id="kcq-g8-Qso"/>

@@ -17,6 +17,9 @@ class GoalCell: UITableViewCell {
 //    type description label
     @IBOutlet weak var goalTypeLbl: UILabel!
     
+    
+    @IBOutlet weak var completionView: UIView!
+    
 //    number label
     @IBOutlet weak var goProgressLbl: UILabel!
     
@@ -25,6 +28,12 @@ class GoalCell: UITableViewCell {
         self.goalDescriptionLbl.text = goal.goalDescription
         self.goalTypeLbl.text = goal.goalType
         self.goProgressLbl.text = String(describing: goal.goalProgress)
+        
+        if goal.goalProgress == goal.goalCompletionValue {
+            self.completionView.isHidden = false
+        } else {
+            self.completionView.isHidden = true
+        }
         }
     
     
