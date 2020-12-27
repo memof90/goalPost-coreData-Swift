@@ -17,13 +17,14 @@ class GoalsVC: UIViewController {
 //    tableView
     @IBOutlet weak var tableView: UITableView!
     
-    @IBOutlet weak var completionView: UIView!
+    
+    @IBOutlet weak var undoBtnView: UIView!
     
     
 //    devuelve una matriz de los resultados de la solicitud
 //    establecer esto para buscar y analizar en la matriz
     var goals: [Goal] = []
-    
+    var goalRemove: Bool = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +35,7 @@ class GoalsVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
       
-        
+        undoBtnView.isHidden = true
         
     }
     
@@ -70,6 +71,11 @@ class GoalsVC: UIViewController {
         
         presentDetail(createGoalVC)
     }
+    
+    @IBAction func undoBtnWassPressed(_ sender: Any) {
+        goalRemove = false
+    }
+    
     
 }
 
@@ -120,10 +126,25 @@ extension GoalsVC : UITableViewDelegate, UITableViewDataSource {
 //
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let deleteAction = UIContextualAction(style: .destructive, title: "DELETE") { (rowAction, view, completion: (Bool) -> Void) in
-            self.removeGoal(atIndexPath: indexPath)
-            completion(true)
-            self.fetchCoreDataObjects()
-            tableView.deleteRows(at: [indexPath], with: .automatic)
+            
+            self.undoBtnView.isHidden  = false
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) { [self] in
+                if goalRemove {
+                    self.removeGoal(atIndexPath: indexPath)
+                    self.fetchCoreDataObjects()
+                    tableView.deleteRows(at: [indexPath], with: .automatic)
+                } else {
+                    goalRemove = true
+                    tableView.reloadData()
+                }
+                self.undoBtnView.isHidden = true
+            }
+            
+//            self.removeGoal(atIndexPath: indexPath)
+//            completion(true)
+//            self.fetchCoreDataObjects()
+//            tableView.deleteRows(at: [indexPath], with: .automatic)
         }
         deleteAction.backgroundColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
         
