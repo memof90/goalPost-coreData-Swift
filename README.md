@@ -2,28 +2,28 @@
 this is an app with swift CoreData and allow add your goal finish to objective to long term or short Term
 
 ## Screen 1
-![alt text](https://i.postimg.cc/9fDp3nd1/Simulator-Screen-Shot-i-Phone-12-Pro-2020-12-26-at-22-15-39.png)
+![alt text](https://i.ibb.co/HF9bLb4/Simulator-Screen-Shot-i-Phone-12-Pro-2021-03-11-at-16-06-24.png)
 
 ## Screen 2
-![alt text](https://i.postimg.cc/8cmdBQGk/Simulator-Screen-Shot-i-Phone-12-Pro-2020-12-26-at-22-15-54.png)
+![alt text](https://i.ibb.co/Nxwh4xC/Simulator-Screen-Shot-i-Phone-12-Pro-2021-03-11-at-16-06-29.png)
 
 ## Screen 3
-![alt text](https://i.postimg.cc/66rhNRZs/Simulator-Screen-Shot-i-Phone-12-Pro-2020-12-26-at-22-16-08.png)
+![alt text](https://i.ibb.co/KLG4QTV/Simulator-Screen-Shot-i-Phone-12-Pro-2021-03-11-at-16-07-12.png)
 
 ## Screen 4
-![alt text](https://i.postimg.cc/hPK14j8X/Simulator-Screen-Shot-i-Phone-12-Pro-2020-12-26-at-22-16-38.png)
+![alt text](https://i.ibb.co/mRrJd8Q/Simulator-Screen-Shot-i-Phone-12-Pro-2021-03-11-at-16-07-17.png)
 
 ## Screen 5
-![alt text](https://i.postimg.cc/mksNHZ06/Simulator-Screen-Shot-i-Phone-12-Pro-2020-12-26-at-22-17-05.png)
+![alt text](https://i.ibb.co/WGb4Zhb/Simulator-Screen-Shot-i-Phone-12-Pro-2021-03-11-at-16-07-39.png)
 
 ## Screen 6
-![alt text](https://i.postimg.cc/hPMbXBMp/Simulator-Screen-Shot-i-Phone-12-Pro-2020-12-26-at-22-17-09.png)
+![alt text](https://i.ibb.co/XYmDksd/Simulator-Screen-Shot-i-Phone-12-Pro-2021-03-11-at-16-07-34.png)
 
 ## Screen 7
-![alt text](https://i.postimg.cc/767nhJQ2/Simulator-Screen-Shot-i-Phone-12-Pro-2020-12-26-at-22-16-57.png)
+![alt text](https://i.ibb.co/k6JK3vm/Simulator-Screen-Shot-i-Phone-12-Pro-2021-03-11-at-16-07-44.png)
 
 ## Screen 8
-![alt text](https://i.postimg.cc/rwmGWPPc/Simulator-Screen-Shot-i-Phone-12-Pro-2020-12-26-at-22-17-14.png)
+![alt text](https://i.ibb.co/8N6wR1Q/Simulator-Screen-Shot-i-Phone-12-Pro-2021-03-11-at-16-07-56.png)
 
 
 ## video to app 
